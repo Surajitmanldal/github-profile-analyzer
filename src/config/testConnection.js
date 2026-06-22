@@ -1,11 +1,12 @@
-import pool from "./db.js";
+import db from "./db.js";
 
-try {
-    const connection = await pool.getConnection();
+db.connect((err) => {
+    if (err) {
+        console.error("Database Connection Failed:", err.message);
+        return;
+    }
 
     console.log("Database Connected Successfully");
 
-    connection.release();
-} catch (error) {
-    console.error(error.message);
-}
+    db.end();
+});
