@@ -179,7 +179,7 @@ DB_NAME=github_analyzer
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repository-url>
+git clone <https://github.com/Surajitmanldal/github-profile-analyzer>
 ```
 
 ### 2. Navigate to Project Directory
