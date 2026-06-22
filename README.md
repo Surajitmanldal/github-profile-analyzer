@@ -3,6 +3,9 @@
 A RESTful API built with Node.js, Express.js, and MySQL that analyzes GitHub user profiles using the GitHub Public API and stores useful profile insights in a MySQL database.
 
 ---
+ Live Url -  https://github-profile-analyzer-2usu.onrender.com/
+
+---
 
 ## Features
 
@@ -122,7 +125,7 @@ GET /api/profiles/octocat
 Retrieve the top profiles based on popularity score.
 
 ```http
-GET /api/profiles/top
+GET /api/profile/top
 ```
 
 ---
