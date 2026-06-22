@@ -10,9 +10,7 @@ const db = mysql.createConnection({
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME,
     port: process.env.DB_PORT,
-    ssl: {
-        ca: fs.readFileSync("./ca.pem")
-    }
+    ssl: { rejectUnauthorized: false }
 });
 
 export default db;
